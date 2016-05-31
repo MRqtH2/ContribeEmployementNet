@@ -11,5 +11,8 @@ namespace BokAffar.Interfaces
         string Title { get; }
         string Author { get; }
         decimal Price { get; }
+
+        //Extend upon original
+        uint inStock { get; }
     }
 }
