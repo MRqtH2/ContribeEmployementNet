@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BokAffar/BokAffar/bin
+/BokAffar/BokAffar/obj
+/BokAffar/BokAffar.Tests/bin
+/BokAffar/BokAffar.Tests/obj
