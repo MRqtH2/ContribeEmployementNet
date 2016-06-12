@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokAffar.Tests", "BokAffar.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformationProcessing", "Backend\InformationProcessing\InformationProcessing.csproj", "{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "APIconnection", "Backend\APIconnection\APIconnection.shproj", "{85AAC71E-299A-49BB-A003-4319BDC3D93B}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Backend\APIconnection\APIconnection.projitems*{85aac71e-299a-49bb-a003-4319bdc3d93b}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
