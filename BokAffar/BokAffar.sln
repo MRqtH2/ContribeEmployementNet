@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokAffar", "BokAffar\BokAff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokAffar.Tests", "BokAffar.Tests\BokAffar.Tests.csproj", "{2BA52173-1839-4E9F-9B66-B09F10F33B00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformationProcessing", "Backend\InformationProcessing\InformationProcessing.csproj", "{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2BA52173-1839-4E9F-9B66-B09F10F33B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BA52173-1839-4E9F-9B66-B09F10F33B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BA52173-1839-4E9F-9B66-B09F10F33B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
