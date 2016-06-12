@@ -10,8 +10,8 @@ namespace BokAffar.Models
     {
         string IBook.Title { get; }
         string IBook.Author { get; }
-        decimal IBook.Price{ get; }
+        decimal IBook.Price { get; }
         uint IBookStock.inStock { get; }
     }
-    
+
 }
