@@ -9,5 +9,6 @@ namespace BokAffar.Interfaces
     public interface IBookstoreService
     {
         Task<IEnumerable<IBook>> GetBooksAsync(string searchString);
+        Task<IEnumerable<IBookStock>> GetBooksWithStockAsync(string searchString);
     }
 }
