@@ -93,9 +93,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BokAffar\BokAffar.csproj">
+    <ProjectReference Include="..\BokAffar\BookStore.csproj">
       <Project>{E82F90E7-925C-4FF8-9826-A1E2B039649B}</Project>
-      <Name>BokAffar</Name>
+      <Name>BookStore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokAffar", "BokAffar\BokAffar.csproj", "{E82F90E7-925C-4FF8-9826-A1E2B039649B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BokAffar\BookStore.csproj", "{E82F90E7-925C-4FF8-9826-A1E2B039649B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokAffar.Tests", "BokAffar.Tests\BokAffar.Tests.csproj", "{2BA52173-1839-4E9F-9B66-B09F10F33B00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Tests", "BokAffar.Tests\BookStore.Tests.csproj", "{2BA52173-1839-4E9F-9B66-B09F10F33B00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformationProcessing", "Backend\InformationProcessing\InformationProcessing.csproj", "{0FD9E98D-A741-4D60-9BE5-BDCB10B29D7A}"
 EndProject
