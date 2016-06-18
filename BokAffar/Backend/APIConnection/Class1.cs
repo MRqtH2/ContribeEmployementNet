@@ -7,6 +7,10 @@ using RestSharp;
 
 namespace APIConnection
 {
+    /*
+     * RestSharp is used in order to avoid "re-inventing the wheel".     * 
+     */
+
     public class RestsharpDataHandling
     {
 
