@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using BokAffar.Interfaces;
+using InformationProcessing.Interfaces;
 
-namespace BokAffar.Models
+namespace InformationProcessing.Models
 {
     public class BookBasicInfoModel : IBookStock
     {
