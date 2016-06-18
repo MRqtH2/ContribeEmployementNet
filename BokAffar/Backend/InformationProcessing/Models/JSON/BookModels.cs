@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using InformationProcessing.Interfaces;
 
-namespace InformationProcessing.Models
+namespace InformationProcessing.Models.Json
 {
     public class BookBasicInfoModel : IBookStock
     {

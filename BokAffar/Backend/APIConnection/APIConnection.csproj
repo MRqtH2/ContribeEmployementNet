@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InformationProcessing\InformationProcessing.csproj">
+      <Project>{0fd9e98d-a741-4d60-9be5-bdcb10b29d7a}</Project>
+      <Name>InformationProcessing</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
