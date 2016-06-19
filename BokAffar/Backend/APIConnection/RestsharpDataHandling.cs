@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RestSharp;
 using InformationProcessing.Models.Json;
 using InformationProcessing.Interfaces;
 using System.Collections;
 using System.Threading;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace APIConnection
 {
     /*
-     * RestSharp is used in order to avoid "re-inventing the wheel".     * 
+     * Newtonsoft.Json is used for parsing JSON to objects.
      */
 
     public class RestsharpDataHandling : IBookstoreService
@@ -20,27 +21,20 @@ namespace APIConnection
 
         public async Task<IEnumerable<IBook>> GetBooksAsync(string searchString)
         {
-            Task<List<IBook>> IBooks;
-            var client = new RestClient("http://www.contribe.se/arbetsprov-net/");
-            var request = new RestRequest("/books.json", Method.GET);
-            var cancellationTokenSource = new CancellationTokenSource();
-            /*
-            var response = await client.GetAsync<Task<List<IBook>>>(request, r =>
-            {
-                if (r.ResponseStatus == ResponseStatus.Completed)
-                {
-                    IBooks = r.Data;
-                }
-            });
-            */
-            //return await IBooks.AsEnumerable<IBook>();
+            var client = new HttpClient();
+            var results = client.GetAsync("http://www.contribe.se/arbetsprov-net/books.json");
+            var resultsContent = await results.Result.Content.ReadAsStringAsync();
 
-            throw new NotImplementedException();
+            return JsonConvert.DeserializeObject<IEnumerable<IBook>>(resultsContent);            
         }
 
-        public Task<IEnumerable<IBookStock>> GetBooksWithStockAsync(string searchString)
+        public async Task<IEnumerable<IBookStock>> GetBooksWithStockAsync(string searchString)
         {
-            throw new NotImplementedException();
+            var client = new HttpClient();
+            var results = client.GetAsync("http://www.contribe.se/arbetsprov-net/books.json");
+            var resultsContent = await results.Result.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<IEnumerable<IBookStock>>(resultsContent);
         }
     }
 }
